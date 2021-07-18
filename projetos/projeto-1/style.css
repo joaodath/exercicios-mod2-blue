@@ -3,15 +3,11 @@
     padding: 0.5rem;
     letter-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 
 body {
     font-family: Montserrat, sans-serif;
     background-color: #003B7F;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
     scroll-behavior: smooth;
 }
 
@@ -24,10 +20,16 @@ img.rounded {
 
 button {
     font-family: Montserrat, sans-serif;
+    font-weight: bold;
     border: none;
     border-radius: 2rem;
     padding: 1rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    cursor:pointer;
+    background-color: #dfdfdf;
 }
 
 button:hover{
@@ -37,6 +39,20 @@ button:hover{
 
 div.card {
     width: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+div.card h1 {
+    color: #003B7F;
+    padding-bottom: 2rem;
+}
+
+div.card-content {
+    width: fit-content;
     border-radius: 1.5rem;
     padding: 1rem;
     margin: 1rem;
@@ -44,12 +60,7 @@ div.card {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    align-self: center;
     justify-content: center;
-}
-div.card h1 {
-    color: #003B7F;
-    padding-bottom: 2rem;
 }
 
 div.created-by {
@@ -61,4 +72,9 @@ div.created-by a {
     color: #ffffff;
     background-color: #005FCC;
     text-decoration: none;
+}
+
+div.row {
+    display: flex;
+    flex-flow: row wrap;
 }
