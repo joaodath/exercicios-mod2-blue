@@ -1,0 +1,44 @@
+<!-- // Crie um menu com 3 div e em cada uma coloque um botão para cada pedido
+// Para cada botao clicado, deve exibir um alerta com a sua escolha -->
+
+<!-- // Adicione um campo de formulário no final com os itens: 
+// nome, endereço, e forma de pagamento (escolher entre dinheiro ou cartão) -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criando menus</title>
+</head>
+<body>
+    <div class="flex-container">
+        <h1 class="title">Pizzaria C6</h1>
+        <h2 class="description">Escolha seu sabor!</h2>
+        <div class="flex-choices">
+        <div class="select-choice">
+            <img src="img/4-queijos.jpg" alt="4 Queijos" class="rounded" id="op1" value="op1">
+            <p id="choice-name1" value="4-queijos">4 Queijos</p>
+            <button id="choice01" value="op1">Escolher 4 Queijos</button>
+        </div>
+        <div class="select-choice">
+            <img src="img/camarao.jpg" alt="Camarão" class="rounded" id="op2" value="op2">
+            <p id="choice-name2" value="camarao">Camarão</p>
+            <button id="choice02" value="op2">Escolher Camarão</button>
+        </div>
+        <div class="select-choice">
+            <img src="img/portuguesa.jpg" alt="Portuguesa" class="rounded" id="op3" value="op3">
+            <p id="choice-name3" value="portuguesa">Portuguesa</p>
+            <button id="choice03" value="op3">Escolher Portuguesa</button>
+        </div>
+    </div>
+        <div class="show-more">
+            <button id="show-more">Ver mais sabores!</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
