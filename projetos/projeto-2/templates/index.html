@@ -16,25 +16,27 @@
             <p class="texto-bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, ipsa optio architecto ipsam sit molestiae error illum vero impedit pariatur.</p>
         </div>
         <div class="menu">
-            <button class="python-btn">Python</button>
-            <button class="html-css-btn">HTML/CSS/Javascript</button>
-            <button class="fale-comigo-btn">Fale Comigo</button>
+            <button class="navbar2" id="python-btn" value="hidden">Python</button>
+            <button class="navbar2" id="html-css-btn" value="hidden">HTML/CSS/Javascript</button>
+            <a href="#contato"><button class="navbar2" id="fale-comigo-btn" value="hidden">Fale Comigo</button></a>
         </div>
 
         <!-- Blocos de Código Reutilizável projetos-python pelo Javascript -->
-        <div class="projetos-python">
+        <div class="projetos-python-container">
             <h2>Projetos em Python</h2>
-            <div id="projeto01" class="python">
-                <!-- Insira aqui Projeto 01 -->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/sAiTuitN5b8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div id="projeto02" class="python">
-                <!-- Insira aqui Projeto 02 -->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/Jsj-hDW9bS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div id="projeto03" class="python">
-                <!-- Insira aqui Projeto 03 -->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/e0OEmrHzJjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="projetos-python-row">
+                <div id="projeto01" class="python">
+                    <!-- Insira aqui Projeto 01 -->
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/sAiTuitN5b8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="projeto02" class="python">
+                    <!-- Insira aqui Projeto 02 -->
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/Jsj-hDW9bS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="projeto03" class="python">
+                    <!-- Insira aqui Projeto 03 -->
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/e0OEmrHzJjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <div class="contato" id="contato">
@@ -44,4 +46,5 @@
         </div>
     </div>
 </body>
+<script src="../static/js/scripts.js"></script>
 </html>
