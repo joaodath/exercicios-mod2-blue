@@ -1,18 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
 }
 
-img.foto-perfil {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20vw;
-    object-fit: cover;
-    border-radius: 50%;
-    align-content: center;
+/* Estilos do header de navegação da página */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #dfdfdf;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    height: 5rem
 }
+
+.logo {
+    margin-left: 3rem;
+    font-weight: 400;
+    height: 4rem;
+}
+
+.logo:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#header-about-me {
+    display: none;
+}
+
+#header-about-me, #header-contact {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    cursor:pointer;
+    height: 3rem;
+    width: 10rem;
+    background-color: #ffffff;
+    color: #3a3a3a;
+}
+
+#header-about-me:hover, #header-contact:hover {
+    font-weight: 700;
+    color: #f7b211;
+}
+
+/* Fim dos Estilos do header de navegação da página */
+
+/* Estilos do conteúdo principal no portfólio */
 
 div.flex-container {
     display: flex;
@@ -22,13 +72,61 @@ div.flex-container {
     align-items: center;
 }
 
+/* Estilos da foto e perfil no portfólio */
+
+img.foto-perfil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0.7rem;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p.texto-bio {
+    width: 70vw;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+p.hashtags-bio {
+    width: 70vw;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.destaque-texto {
+    background-color: #f7b211;
+    color: #000;
+}
+
+/* Fim dos estilos da foto e perfil no portfólio */
+
+/* Estilos do menu de navegação no portfólio */
+
 div.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-button.navbar2 {
+button {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -36,7 +134,7 @@ button.navbar2 {
     border: none;
     border-radius: 2rem;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 0rem;
@@ -46,7 +144,7 @@ button.navbar2 {
     height: 4rem;
 }
 
-button.navbar2:hover {
+.hoverbtn:hover {
     background-color: #f7b211;
     color: #000000;
 }
@@ -56,39 +154,36 @@ button.navbar2:active {
     color: #ffffff;
 }
 
-button.python-btn-active {
+button#python-btn:focus, button#frontend-btn:focus, button#branding-btn:focus, button#fale-comigo-btn:focus {
     background-color: #000000;
     color: #ffffff;
 }
 
-p.texto-bio {
-    text-align: center;
+button#fale-comigo-btn {
+    display: none;
 }
 
-h1 {
-    text-align: center;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    text-align: center;
-    font-weight: 600;
-    margin-top: 0.5rem;
-}
+/* Fim dos Estilos do menu de navegação no portfólio */
 
 div.contato {
     margin-top: 3rem;
 }
 
-div.projetos-python {
-    display: flex;
-    flex-direction: row;
-}
+/* Estilos Bloco Projetos Python */
 
 div.projetos-python-container {
-    display: flex;
+    display: none;
     flex-direction: column;
+    margin-top: 2rem;
+}
+
+p {
+    width: 400px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 div.projetos-python-row {
@@ -103,3 +198,180 @@ div.python {
     margin-right: 2rem;
 }
 
+/* Fim dos Estilos Bloco Projetos Python */
+
+/* Estilos Bloco Projetos Frontend */
+
+div.projetos-frontend-container {
+    display: none;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+div.projetos-front-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.front {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Fim dos Estilos Bloco Projetos Frontend */
+
+/* Estilos Bloco Projetos Branding */
+
+div.projetos-branding-container {
+    display: none;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+div.projetos-branding-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.branding {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Fim dos Estilos Bloco Projetos Branding */
+
+/* Estilos Bloco portf-placeholder */
+
+div.portf-placeholder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+/* Fim dos Estilos Bloco portf-placeholder */
+
+/* Estilos Bloco Contato e Formulário */
+
+div.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem
+}
+
+div.status_sent {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    width: 47.3vw;
+    height: 4rem;
+    border-left-style: solid;
+    border-left-width: 1.5rem;
+    background-color: #ffd77a;
+    border-color: #f7b211;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+form #nome, form #email, form #mensagem, form #enviar {
+    margin: 0.5rem;
+    width: 50vw;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+form label {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/* Fim dos Estilos Bloco Contato e Formulário */
+
+/* Estilos Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #dfdfdf;
+    background-color: #181818;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    height: 7rem
+}
+
+#logo-footer {
+    /* Convertendo o logo preto para branco porque esqueci de fazer um svg branco
+    O site que converte é esse aqui: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    height: 4rem;
+    margin-left: 3rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+#made-love {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    height: 4rem;
+    font-weight: 400;
+    position: absolute;
+    cursor: pointer;
+}
+
+div#footer-menu {
+    position: absolute;
+    right: 0;
+}
+
+button#footer-github, button#footer-linkedin {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    cursor:pointer;
+    height: 3rem;
+    width: 10rem;
+    background-color: #181818;
+    color: #ffffff;
+}
+
+button#footer-github:hover, button#footer-linkedin:hover {
+    font-weight: 700;
+    color: #f7b211;
+}
+
+/* Fim dos Estilos Footer */
