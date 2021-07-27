@@ -19,7 +19,7 @@ def send():
 	msg = "Recebi seu email! Entrarei em contato em breve!"
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login(my_email, os.environ.get('EMAIL_PASS'))
+	server.login(my_email, os.getenv('JRDNGMAILPASS'))
 	server.sendmail(my_email, email, msg.encode('utf-8'))
 	server.sendmail(my_email, my_email, f'João, você recebeu um novo contato de {nome}, {email} e com a seguinte mensagem: {mensagem}'.encode('utf-8'))
 	
